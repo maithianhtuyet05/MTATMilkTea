@@ -23,7 +23,7 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
-import logo from "./../../../assets/img/Milktea.gif";
+import logo from "./../../../assets/img/Milktea.jpg";
 import delivery from "./../../../assets/img/delivery.png";
 import { Link, NavLink, useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -59,9 +59,7 @@ const sections = [
   { title: "TRÀ SỮA", url: "/milktea" },
   { title: "TRÁNG MIỆNG", url: "/dessert" },
   { title: "SẢN PHẨM", url: "/product" },
-  { title: "VÒNG QUAY MAY MẮN", url: "/spinner" },
   { title: "VỀ CHÚNG TÔI", url: "/about" },
-  { title: "TRÒ CHƠI", url: "/game" },
 ];
 
 const drawerWidth = 500;
