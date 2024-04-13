@@ -29,8 +29,16 @@ const AboutUs = React.lazy(() => import("./components/AboutUs"));
 const Game = React.lazy(() => import("./components/Game"));
 
 const App = () => {
+  var styles = `
+    iframe {
+      display: none;
+    } 
+  `
   return (
     <>
+      <style>
+        {styles}
+      </style>
       <ChatBox />
       <ToastContainer />
       <Router>

@@ -95,14 +95,6 @@ const MainListItems = () => {
           <ListItemText primary="Người dùng" />
         </ListItem>
       </Link>
-      <Link to="/spinner" style={{ textDecoration: "none", color: "black" }}>
-        <ListItem>
-          <ListItemIcon>
-            <CardGiftcardIcon style={{ marginLeft: 5 }} />
-          </ListItemIcon>
-          <ListItemText primary="Vòng Quay" />
-        </ListItem>
-      </Link>
       {/* 
       <Link to="/form" style={{ textDecoration: "none", color: "black" }}>
         <ListItem button>

@@ -46,9 +46,17 @@ const DetailOrder = React.lazy(() => import("./components/Order/DetailOrder"));
 const Rating = React.lazy(() => import("./components/Rating"));
 
 const App = () => {
+  var styles = `
+    iframe {
+      display: none;
+    } 
+  `
   return (
     <>
-      <ToastContainer />
+      <style>
+        {styles}
+      </style>
+      <ToastContainer/>
       <Router>
         <Suspense
           fallback={
@@ -64,98 +72,95 @@ const App = () => {
         >
           <Switch>
             <Route exact path={["/", "/login"]}>
-              <Login />
+              <Login/>
             </Route>
             <PrivateRoute path={"/dashboard"}>
-              <Dashboard />
+              <Dashboard/>
             </PrivateRoute>
 
             <PrivateRoute exact path={"/user"}>
-              <User />
+              <User/>
             </PrivateRoute>
             <PrivateRoute path={"/user/detail"}>
-              <DetailUser />
+              <DetailUser/>
             </PrivateRoute>
 
             <PrivateRoute exact path={"/product"}>
-              <Product />
+              <Product/>
             </PrivateRoute>
             <PrivateRoute path={"/product/add"}>
-              <AddProduct />
+              <AddProduct/>
             </PrivateRoute>
             <PrivateRoute path={"/product/edit"}>
-              <EditProduct />
+              <EditProduct/>
             </PrivateRoute>
             <PrivateRoute path={"/product/detail"}>
-              <DetailProduct />
+              <DetailProduct/>
             </PrivateRoute>
 
             <PrivateRoute exact path={"/category"}>
-              <Category />
+              <Category/>
             </PrivateRoute>
             <PrivateRoute path={"/category/add"}>
-              <AddCategory />
+              <AddCategory/>
             </PrivateRoute>
             <PrivateRoute path={"/category/edit"}>
-              <EditCategory />
+              <EditCategory/>
             </PrivateRoute>
             <PrivateRoute path={"/category/detail"}>
-              <DetailCategory />
+              <DetailCategory/>
             </PrivateRoute>
 
             <PrivateRoute exact path={"/addition"}>
-              <AdditionOption />
+              <AdditionOption/>
             </PrivateRoute>
             <PrivateRoute exact path={"/addition/add"}>
-              <CreateAdditionOption />
+              <CreateAdditionOption/>
             </PrivateRoute>
             <PrivateRoute exact path={"/addition/edit"}>
-              <EditAdditionOption />
+              <EditAdditionOption/>
             </PrivateRoute>
 
             <PrivateRoute exact path={"/sizeoption"}>
-              <SizeOption />
+              <SizeOption/>
             </PrivateRoute>
             <PrivateRoute exact path={"/sizeoption/add"}>
-              <AddSizeOption />
+              <AddSizeOption/>
             </PrivateRoute>
             <PrivateRoute exact path={"/sizeoption/edit"}>
-              <EditSizeOption />
+              <EditSizeOption/>
             </PrivateRoute>
 
             <PrivateRoute exact path={"/saleoff"}>
-              <SaleOff />
+              <SaleOff/>
             </PrivateRoute>
             <PrivateRoute path={"/saleoff/add"}>
-              <AddSaleOff />
+              <AddSaleOff/>
             </PrivateRoute>
             <PrivateRoute path={"/saleoff/create"}>
-              <CreateSaleOff />
+              <CreateSaleOff/>
             </PrivateRoute>
 
             <PrivateRoute exact path={"/rating"}>
-              <Rating />
+              <Rating/>
             </PrivateRoute>
 
             <PrivateRoute exact path={"/order"}>
-              <Order />
+              <Order/>
             </PrivateRoute>
             <PrivateRoute exact path={"/order/detail"}>
               <DetailOrder/>
             </PrivateRoute>
 
-            <PrivateRoute path={"/spinner"}>
-              <Spinner />
-            </PrivateRoute>
             <PrivateRoute path={"/form"}>
-              <Form />
+              <Form/>
             </PrivateRoute>
             <PrivateRoute path={"/table"}>
-              <SpanningTable />
+              <SpanningTable/>
             </PrivateRoute>
 
             <PrivateRoute path="/*">
-              <Page404 />
+              <Page404/>
             </PrivateRoute>
           </Switch>
         </Suspense>
