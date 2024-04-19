@@ -16,17 +16,16 @@ const Footer = () => {
       <Grid item xs={12} md={8} style={{ paddingLeft: 20 + "px" }}>
         <Typography>
           <b>Trụ sở chính: </b>
-          Công ty CP MTATMilkTea - ĐKKD: 0316 871719 do sở KHĐT TPHCM cấp lần
-          đầu ngày 21/05/2021
+          Công ty CP MTATMilkTea - ĐKKD: 0316 871719 do sở KHĐT TP Hà Nội cấp lần
+          đầu ngày 01/01/2024
         </Typography>
         <Typography>
           <b>Nhà máy: </b>
-          D_8D_CN Đường XE 1, Khu Công Nghiệp Mỹ Phước III, phường Mỹ Phước, thị
-          xã Bến Cát, tỉnh Bình Dương, Việt Nam
+          Lô 6, CN5, Cụm CN Ngọc Hồi, Thanh Trì , Hà Nội
         </Typography>
         <Typography>
           <b>Địa chỉ: </b>
-          Cách Mạng Tháng Tám, Phường 11, District 3, Ho Chi Minh City, Vietnam
+          Ngõ 421, Hoàng Quốc Việt, Cổ Nhuế 1
         </Typography>
         <Typography>
           <b>Điện thoại: </b>

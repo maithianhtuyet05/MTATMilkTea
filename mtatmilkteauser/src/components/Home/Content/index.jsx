@@ -72,10 +72,10 @@ const Content = () => {
                     <div className={classes.cardDetails}>
                         <CardContent>
                             <Typography component="h2" variant="h5">
-                                PHÚC LONG KIOSK CHÍNH THỨC PHỤC VỤ TẠI QUẬN 3 VÀ QUẬN 7
+                                PHÚC LONG KIOSK CHÍNH THỨC PHỤC VỤ TẠI CẦU GIẤY
                             </Typography>
                             <Typography variant="subtitle1" paragraph>
-                                Bên cạnh 3 Kiosk mới đi vào phục vụ chính thức tại Quận 8, Phúc Long tiếp tục mở rộng mô hình Phúc Long Kiosk nhanh, tiện, hiện đại, chất lượng đến Quận 3 và Quận 7 kể từ ngày 30.06.2021.
+                                Bên cạnh 3 Kiosk mới đi vào phục vụ chính thức tại Cầu Giấy, Phúc Long tiếp tục mở rộng mô hình Phúc Long Kiosk nhanh, tiện, hiện đại, chất lượng đến Cầu Giấy kể từ ngày 30.01.2024.
                                 Giờ đây, Khách hàng dễ dàng thưởng thức vị trà – cà phê Phúc Long truyền thống tại các cửa hàng VinMar
                                 Đặc biệt, Khách hàng ghé thăm Phúc Long tại những địa điểm khai trương sẽ nhận được những món quà cực hấp dẫn:
 
@@ -102,10 +102,10 @@ const Content = () => {
                             <Typography variant="subtitle1" paragraph>
                                 Ưu đãi "Mua 1 Tặng 1": Miễn phí 1 ly Café đen hoặc Sữa nóng hoặc đá (size Vừa) khi mua 1 ly Café size Lớn thuộc nhóm Traditional Coffee và Classic Coffee.
                                 Thời gian áp dụng ưu đãi:
-                                - Áp dụng cả ngày từ 22 - 29.04.2021
-                                - Từ 7-10h sáng mỗi ngày từ 04.05 - 13.06.2021
+                                - Áp dụng cả ngày từ 22 - 29.04.2024
+                                - Từ 7-10h sáng mỗi ngày từ 04.05 - 13.06.2024
                                 Địa điểm áp dụng:
-                                - Toàn bộ hệ thống cửa hàng Phúc Long trên toàn quốc trừ Phúc Long Tân Sơn Nhất.
+                                - Toàn bộ hệ thống cửa hàng Phúc Long trên toàn quốc.
                                 - Kênh đặt hàng Free Delivery 1800 6779.
                                 - Ứng dụng đặt hàng công nghệ.
                             </Typography>
@@ -129,10 +129,10 @@ const Content = () => {
                     <div className={classes.cardDetails}>
                         <CardContent>
                             <Typography component="h2" variant="h5">
-                                PHÚC LONG KIOSK CHÍNH THỨC PHỤC VỤ TẠI QUẬN 3 VÀ QUẬN 7
+                                PHÚC LONG KIOSK CHÍNH THỨC PHỤC VỤ TẠI CẦU GIẤY
                             </Typography>
                             <Typography variant="subtitle1" paragraph>
-                                Bên cạnh 3 Kiosk mới đi vào phục vụ chính thức tại Quận 8, Phúc Long tiếp tục mở rộng mô hình Phúc Long Kiosk nhanh, tiện, hiện đại, chất lượng đến Quận 3 và Quận 7 kể từ ngày 30.06.2021.
+                                Bên cạnh 3 Kiosk mới đi vào phục vụ chính thức tại Cầu Giấy, Phúc Long tiếp tục mở rộng mô hình Phúc Long Kiosk nhanh, tiện, hiện đại, chất lượng đến Cầu Giấy kể từ ngày 30.01.2024.
                                 Giờ đây, Khách hàng dễ dàng thưởng thức vị trà – cà phê Phúc Long truyền thống tại các cửa hàng VinMar
                                 Đặc biệt, Khách hàng ghé thăm Phúc Long tại những địa điểm khai trương sẽ nhận được những món quà cực hấp dẫn:
 

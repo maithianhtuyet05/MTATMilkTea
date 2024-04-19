@@ -32,7 +32,10 @@ const App = () => {
   var styles = `
     iframe {
       display: none;
-    } 
+    }
+    .goog-te-combo {
+        width:120px;
+    }
   `
   return (
     <>
