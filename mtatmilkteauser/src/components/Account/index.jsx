@@ -133,17 +133,17 @@ const Account = () => {
               </ListItem>
             </Link>
 
-            <Link
-              to="/account/voucher"
-              style={{ textDecoration: "none", color: "#203a53" }}
-            >
-              <ListItem button>
-                <ListItemIcon>
-                  <ConfirmationNumberOutlined style={{ color: "#f25634" }} />
-                </ListItemIcon>
-                <ListItemText primary="Voucher" />
-              </ListItem>
-            </Link>
+            {/*<Link*/}
+            {/*  to="/account/voucher"*/}
+            {/*  style={{ textDecoration: "none", color: "#203a53" }}*/}
+            {/*>*/}
+            {/*  <ListItem button>*/}
+            {/*    <ListItemIcon>*/}
+            {/*      <ConfirmationNumberOutlined style={{ color: "#f25634" }} />*/}
+            {/*    </ListItemIcon>*/}
+            {/*    <ListItemText primary="Voucher" />*/}
+            {/*  </ListItem>*/}
+            {/*</Link>*/}
           </List>
         </Grid>
         <Grid item md={10} xs={8} style={{ backgroundColor: "white" }}>

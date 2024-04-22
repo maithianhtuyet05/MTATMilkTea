@@ -16,7 +16,7 @@ export const UserFindByUsernameAction = (query) => async (dispatch) => {
   }
 };
 
-export const updateProfile = (data) => async (dispatch) => {
+export const updateProfile = (data, email) => async (dispatch) => {
   try {
 
     const formData = new FormData();
@@ -28,8 +28,7 @@ export const updateProfile = (data) => async (dispatch) => {
     formData.append("birthday", data.birthday);
     formData.append("address", data.address);
     formData.append("phone", data.phone);
-    formData.append("email", data.email);
-
+    formData.append("email", email);
     await UserService.update(formData)
       .then(res => dispatch(profileUpdate(res.data)))
       .catch(err => console.error(err));

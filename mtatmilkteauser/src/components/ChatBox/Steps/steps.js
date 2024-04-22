@@ -44,7 +44,7 @@ export const steps = [
   },
   {
     id: "address",
-    component: <GoogleMap />,
+    message: "Ngõ 421, Hoàng Quốc Việt, Cổ Nhuế 1",
     trigger: "name",
   },
   {

@@ -84,6 +84,7 @@ const Profile = () => {
 
   //Display image
   const [img, setImg] = useState();
+  const [email, setEmail] = useState("");
 
   const onImageChange = (event) => {
     if (event.target.files && event.target.files[0]) {
@@ -93,9 +94,8 @@ const Profile = () => {
 
   const onSubmit = (data) => {
     data.multipartFile = data.multipartFile[0] ? data.multipartFile[0] : null;
-    data.email = customer?.email;
     setTimeout(() => {
-      dispatch(updateProfile(data)).then((res) => {
+      dispatch(updateProfile(data, email)).then((res) => {
         setOpen(false);
         history.replace("/account");
         Notification.success("Đã cập nhập thành công!");
@@ -103,6 +103,11 @@ const Profile = () => {
     }, 2000);
     setOpen(!open);
   };
+
+
+  function handleChange(e) {
+    setEmail(e.target.value);
+  }
 
   return (
     <React.Fragment>
@@ -206,11 +211,19 @@ const Profile = () => {
               </Grid>
               <Grid item xs={12}>
                 <TextField
+                  onChange={handleChange}
                   name="email"
+                  type={"email"}
                   label="Địa chỉ email"
                   fullWidth
                   defaultValue={customer.email}
-                  disabled={true}
+                  inputRef={register({
+                    required: "Email không được để trống",
+                    pattern: {
+                      value: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+                      message: "Email thoại không hợp lệ",
+                    },
+                  })}
                 />
               </Grid>
             </Grid>

@@ -131,7 +131,7 @@ const CheckAddress = () => {
 
   const [loadMap] = useState(true);
   const [from] = useState(
-    "FPT Aptech HCM - Hệ Thống Đào Tạo Lập Trình Viên Quốc Tế (Since 1999), Cách Mạng Tháng Tám, Phường 11, District 3, Ho Chi Minh City, Vietnam"
+    "Ngõ 421, Hoàng Quốc Việt, Cổ Nhuế 1, Vietnam"
   );
   const [to, setTo] = useState("");
 

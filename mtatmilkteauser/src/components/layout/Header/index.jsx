@@ -24,7 +24,7 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
 import logo from "./../../../assets/img/Milktea.jpg";
-import delivery from "./../../../assets/img/delivery.png";
+import delivery from "./../../../assets/img/giao_hang.jpg";
 import { Link, NavLink, useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { AuthLogoutAction } from "./../../../store/actions/AuthAction";
@@ -873,12 +873,12 @@ const Header = ({ isOpen, onHandleOpen }) => {
                     >
                       <MenuItem>Lịch sử mua hàng</MenuItem>
                     </Link>
-                    <Link
-                      to="/account/voucher"
-                      style={{ textDecoration: "none", color: "black" }}
-                    >
-                      <MenuItem>Voucher</MenuItem>
-                    </Link>
+                    {/*<Link*/}
+                    {/*  to="/account/voucher"*/}
+                    {/*  style={{ textDecoration: "none", color: "black" }}*/}
+                    {/*>*/}
+                    {/*  <MenuItem>Voucher</MenuItem>*/}
+                    {/*</Link>*/}
                     <MenuItem onClick={onHandleLogout}>Đăng xuất</MenuItem>
                   </Menu>
                 </>
