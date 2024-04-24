@@ -49,7 +49,7 @@ export const steps = [
   },
   {
     id: "ship_detail",
-    component: <Shipping />,
+    message: "15.000 đ trên mọi đơn hàng",
     trigger: "name",
   },
 ];

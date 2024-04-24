@@ -205,7 +205,7 @@ const CheckAddress = () => {
                   style={{ marginTop: 10 }}
                   id="btnSubmit"
                   className={classes.btnReloadMapDisable}
-                  disabled={true}
+                  disabled={false}
                 >
                   Tiếp theo
                 </button>
@@ -283,7 +283,7 @@ const CheckAddress = () => {
                       <div
                         id="map"
                         style={{ height: "400px", width: "500px" }}
-                      ></div>
+                      > Coming soon </div>
                     </div>
                   </>
                 )}
