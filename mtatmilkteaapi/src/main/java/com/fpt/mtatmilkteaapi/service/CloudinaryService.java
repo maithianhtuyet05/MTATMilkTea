@@ -1,6 +1,7 @@
 package com.fpt.mtatmilkteaapi.service;
 
 import com.cloudinary.Cloudinary;
+import com.cloudinary.utils.ObjectUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -9,6 +10,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import com.cloudinary.*;
 
 @Service
 public class CloudinaryService {
@@ -21,12 +23,10 @@ public class CloudinaryService {
     private Map<String, String> valuesMap;
 
     public CloudinaryService() {
-
-        valuesMap = new HashMap<>();
-        valuesMap.put("cloud_name", cloudName);
-        valuesMap.put("api_key", apiKey);
-        valuesMap.put("api_secret", apiSecret);
-        cloudinary = new Cloudinary(valuesMap);
+        cloudinary = new Cloudinary(ObjectUtils.asMap(
+                "cloud_name", "fpt-aptech-hhtl",
+                "api_key", "448453731621348",
+                "api_secret", "gxAskpQXkxL7wX50c_y_tL-KYPc"));
     }
 
     public Map upload(MultipartFile multipartFile, Map<String, String> options) throws IOException {
@@ -54,5 +54,4 @@ public class CloudinaryService {
         fo.close();
         return file;
     }
-
 }

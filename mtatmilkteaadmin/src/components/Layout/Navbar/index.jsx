@@ -22,7 +22,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { AuthLogoutAction } from "../../../store/actions/AuthAction";
 import ExpandLessIcon from "@material-ui/icons/ExpandLess";
-import Logo from "./../../../assets/img/Milktea.gif";
+import Logo from "./../../../assets/img/Milktea.jpg";
 import { Client } from "@stomp/stompjs";
 import { RatingListAction } from "../../../store/actions/RatingAction";
 
