@@ -91,9 +91,6 @@ const App = () => {
                 <Route path={"/about"} exact>
                   <AboutUs />
                 </Route>
-                <Route path={"/game"} exact>
-                  <Game />
-                </Route>
 
                 <PrivateRoute
                   path={["/account", "/account/history", "/account/voucher"]}

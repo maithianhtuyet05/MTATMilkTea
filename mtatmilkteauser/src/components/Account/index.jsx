@@ -17,7 +17,7 @@ import {
 import { Link, Route, Switch } from "react-router-dom";
 import Profile from "./Profile";
 import History from "./History";
-import Voucher from "./Voucher";
+// import Voucher from "./Voucher";
 import HistoryDetail from "./History/HistoryDetail";
 import { useDispatch, useSelector } from "react-redux";
 import { GroupOrderFindAllAction } from "../../store/actions/GroupOrderAction";
@@ -155,7 +155,7 @@ const Account = () => {
               exact
               component={HistoryDetail}
             />
-            <Route path="/account/voucher" exact component={Voucher} />
+{/*             <Route path="/account/voucher" exact component={Voucher} /> */}
           </Switch>
         </Grid>
       </Grid>

@@ -6,9 +6,8 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Hidden from '@material-ui/core/Hidden';
-import content1 from './../../../assets/img/content1.jpg';
-import content2 from './../../../assets/img/content2.jpg';
-import content3 from './../../../assets/img/content3.jpg';
+import anhT4 from './../../../assets/img/anh t4_phúc long trà.jpg';
+import anhT2 from './../../../assets/img/ảnh t2_phúc long Kiosk.jpg';
 import { Button } from '@material-ui/core';
 
 const useStyles = makeStyles({
@@ -58,7 +57,7 @@ const Content = () => {
                         </CardContent>
                     </div>
                     <Hidden xsDown>
-                        <CardMedia className={classes.cardMedia} image={content1} title="bannertrangchu" style={{ width: 500 + 'px' }} />
+                        <CardMedia className={classes.cardMedia} image={anhT2} title="bannertrangchu" style={{ width: 500 + 'px' }} />
                     </Hidden>
                 </Card>
             </Grid>
@@ -67,7 +66,7 @@ const Content = () => {
             <Grid item xs={12} md={12} style={{ paddingTop: 80 + 'px' }}>
                 <Card className={classes.card} style={{ boxShadow: 'none' }}>
                     <Hidden xsDown>
-                        <CardMedia className={classes.cardMedia} image={content2} title="bannertrangchu" style={{ width: 500 + 'px' }} />
+                        <CardMedia className={classes.cardMedia} image={anhT2} title="bannertrangchu" style={{ width: 500 + 'px' }} />
                     </Hidden>
                     <div className={classes.cardDetails}>
                         <CardContent>
@@ -115,7 +114,7 @@ const Content = () => {
                         </CardContent>
                     </div>
                     <Hidden xsDown>
-                        <CardMedia className={classes.cardMedia} image={content3} title="bannertrangchu" style={{ width: 500 + 'px' }} />
+                        <CardMedia className={classes.cardMedia} image={anhT4} title="bannertrangchu" style={{ width: 500 + 'px' }} />
                     </Hidden>
                 </Card>
             </Grid>
@@ -124,7 +123,7 @@ const Content = () => {
             <Grid item xs={12} md={12} style={{ paddingTop: 80, paddingBottom: 80 }}>
                 <Card className={classes.card} style={{ boxShadow: 'none' }}>
                     <Hidden xsDown>
-                        <CardMedia className={classes.cardMedia} image={content2} title="bannertrangchu" style={{ width: 500 + 'px' }} />
+                        <CardMedia className={classes.cardMedia} image={anhT2} title="bannertrangchu" style={{ width: 500 + 'px' }} />
                     </Hidden>
                     <div className={classes.cardDetails}>
                         <CardContent>
