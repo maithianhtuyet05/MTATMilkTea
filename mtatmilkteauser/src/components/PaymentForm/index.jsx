@@ -103,6 +103,7 @@ const PaymentForm = () => {
   const { order, totalPrice } = useSelector((state) => state.order);
   const { customer } = useSelector((state) => state.customer);
   const address = location.state?.address;
+  address.shippingPrice = 15000;
   const [orderID, setOrderID] = useState("");
   const [total, setTotal] = useState(0);
   const [memberVip, setMemberVip] = useState(0);
