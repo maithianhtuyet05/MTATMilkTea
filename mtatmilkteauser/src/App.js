@@ -34,7 +34,7 @@ const App = () => {
       display: none;
     }
     .goog-te-combo {
-        width:120px;
+        width:60px;
     }
   `
   return (
