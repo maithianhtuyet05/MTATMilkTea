@@ -30,7 +30,7 @@ import sha256 from "sha256";
 
 const HASH_SECRET = "XPUQZNZXYYUJAXXLMAJPLEAAQZYXVNCA";
 const TMNCODE = "ZYP5A0IS";
-const VNP_URL = "http://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
+const VNP_URL = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
 const VNP_RETURN = "http://localhost:3000/checkoutresult-vnpay";
 
 function sortObject(o) {
@@ -239,6 +239,11 @@ const PaymentForm = () => {
   };
 
   const handlerVNPay = async () => {
+    Date.prototype.addDays = function(days) {
+      var date = new Date(this.valueOf());
+      date.setDate(date.getDate() + days);
+      return date;
+    }
     const tmnCode = TMNCODE;
     const secretKey = HASH_SECRET;
     const returnUrl = VNP_RETURN;
@@ -246,6 +251,7 @@ const PaymentForm = () => {
     const date = new Date();
 
     const createDate = dateFormat(date, "yyyymmddHHmmss");
+    const expireDate = dateFormat(date.addDays(1), "yyyymmddHHmmss");
     // const orderId = dateFormat(date, "HHmmss");
     const orderId = new Date().getTime();
     const amount = localStorage.getItem("group")
@@ -305,6 +311,7 @@ const PaymentForm = () => {
     set_vnp_Params["vnp_ReturnUrl"] = returnUrl;
     set_vnp_Params["vnp_IpAddr"] = await publicIp.v4();
     set_vnp_Params["vnp_CreateDate"] = createDate;
+    set_vnp_Params["vnp_ExpireDate"] = expireDate;
     set_vnp_Params["vnp_BankCode"] = bankCode;
 
     const vnp_Params = sortObject(set_vnp_Params);
@@ -319,7 +326,7 @@ const PaymentForm = () => {
     vnp_Params["vnp_SecureHashType"] = "SHA256";
     vnp_Params["vnp_SecureHash"] = secureHash;
     const vnpUrl =
-      VNP_URL + "?" + queryString.stringify(vnp_Params, { encode: true });
+      VNP_URL + "?" + queryString.stringify(vnp_Params, { encode: false });
     window.location.href = vnpUrl;
     // setUrl(vnpUrl);
   };

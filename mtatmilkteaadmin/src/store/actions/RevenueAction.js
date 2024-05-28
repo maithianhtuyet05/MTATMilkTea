@@ -13,8 +13,12 @@ export const RevenueList = (query) => async (dispatch) => {
 
 export const YearList = () => async (dispatch) => {
     try {
+      let x = []
+      for (let i = 2024; i >= 2020; i--) {
+        x.push(i)
+      }
         await RevenueService.listYear()
-            .then((res) => dispatch(getYears(res.data)))
+            .then((res) => dispatch(getYears(x)))
             .catch((err) => console.error(err));
     } catch (error) {
         console.error(error);

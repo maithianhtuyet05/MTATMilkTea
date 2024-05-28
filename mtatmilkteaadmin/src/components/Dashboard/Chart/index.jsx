@@ -14,7 +14,7 @@ function createData(month, revenue) {
 }
 
 const Chart = () => {
-  const [year, setYear] = useState(2021);
+  const [year, setYear] = useState(2024);
   const theme = useTheme();
   const { listRevenue, listYears, sumRevenue } = useSelector((state) => state.revenue);
   const dispatch = useDispatch();
