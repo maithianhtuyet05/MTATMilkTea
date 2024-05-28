@@ -7,7 +7,7 @@ import {
   FormHelperText,
 } from "@material-ui/core";
 import { AccountCircle, LockRounded } from "@material-ui/icons";
-import logo from "./../../assets/img/Milktea.gif";
+import logo from "./../../assets/img/Milktea.jpg";
 import { useForm } from "react-hook-form";
 import { AuthLoginAction } from "../../store/actions/AuthAction";
 import { useDispatch, useSelector } from "react-redux";
